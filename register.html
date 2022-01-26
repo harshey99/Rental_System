@@ -1,0 +1,136 @@
+<html>
+	<head>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/style1.css">
+		<nav class="navbar navbar-fixed-top" id="top-nav">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Apartment Rental System</a>
+				</div>
+				<ul id="list1" class="nav navbar-nav">
+					<li class="active"><a href="index.html">Home</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<style>
+		body  {
+			background-image: url("imageo.jpg");
+
+		}
+		</style>
+
+
+
+	  </head>
+	  <body>
+		<div class=" container-fluid " id="dash" >
+		<h2>TENANT REGISTRATION</h2>
+		<form action="tenant.php" method="POST" enctype="multipart/form-data">
+        <div class="container">
+		   <h3>Personal Details</h3>
+           <hr>
+           <table>
+           	<tr>
+           		<td><label for="name"><b>Name:</b></label></td>
+							<td> <input type="text" placeholder="Enter in capital letters" name="name" required></td>
+           	</tr>
+
+						<tr>
+							<td><label for="email"><b>Email(Username):</b></label></td>
+							<td><input type="email" placeholder="abc@xyz.com" name="email" required></td>
+						</tr>
+
+					 <tr>
+ 					 <td><label for="from"><b>From</b></label></td>
+ 					 <td><input type="text" placeholder="City Name" name="from" required></td>
+ 				  </tr>
+
+				<tr>
+				<td><label for="address"><b>Full Address</b></label></td>
+				<td> <input type="decimal" placeholder="" name="address" required min="0" max="100"></td>
+			</tr>
+			<tr>
+			<td><label for="Status"><b>Status</b></label></td>
+			<td><select name="status" placeholder="Select">
+				<option label="bachlor">Bachlor</option>
+				<option label="family">Family</option></select></td>
+			<!-- <td><input type="decimal" placeholder="Bachlor/Famil" name="status" required min="0" max="100"> </td> -->
+		 </tr>
+		 <tr>
+		 <td><label for="pwd"><b>Password:</b></label></td>
+		 <td> <input type="password" placeholder="minimum 6 characters" name="password" required></td>
+		</tr>
+		<tr>
+		<td><label for="phone"><b>Contact number:</b></label></td>
+		<td><input type="number" placeholder="" name="contact" required></td>
+	 </tr>
+	 <!-- <tr>
+	 	<td><label for="degree"><b>Course:</b></label></td>
+		<td><select name="degree" placeholder="Select">
+			<option label="B.Tech">B.Tech</option>
+	<option label="M.Tech">M.Tech</option>
+	<option label="B.E">B.E</option>
+	<option label="M.E">M.E</option>
+	 <option label="BCA">BCA</option>
+			<option label="MCA">MCA</option>
+		<option label="MSC">MSC</option>
+	</select></td>
+	 </tr> -->
+		  </table>
+<br>
+			<button type="submit" class="button button2" name="insert" class="registerbtn">Register</button>
+
+          <hr>
+
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+  </div>
+</form>
+
+  <div class="container signin">
+    <p>Already have an account? <a href="index.html">Login</a>.</p>
+  </div>
+
+	</div>
+	</body>
+		<footer>
+		<nav class="navbar navbar-footer" id="bottom-nav" style="width:100%">
+			<div class="container-fluid">
+				<div id="col1" >
+					<ul id="blist1">
+						<li><a href='#'>About Us</a></li>
+						<li><a href='#'>FAQs</a></li>
+						<li><a href='#'>Contact Us</a></li>
+					</ul>
+				</div>
+
+				<div id="col2" >
+					<ul id="blist1">
+						<li><a href='#'>Privacy Policy</a></li>
+						<li><a href='#'>Legal</a></li>
+						<li><a href='#'>Work With Us</a></li>
+					</ul>
+				</div>
+
+				<div id="col3" class=" container-fluid">
+
+					<ul id="blist3" >
+						<li><i class="fa fa-facebook fa-2x" ><a href='#'></a></i></li>
+						<li><i class="fa fa-twitter fa-2x"><a href='#'></a></i></li>
+						<li><i class="fa fa-instagram fa-2x"><a href='#'></a></i></li>
+						<li><i class="fa fa-linkedin fa-2x"><a href='#'></a></i></li>
+					</ul>
+					<ul>
+					<!--<p id="lic">site design / logo (c) Company_Name Inc.<br> licensed under Company_Name inc. </p>-->
+					<li id="blist4">site design / logo (c) Company_Name Inc.<br> licensed under Company_Name inc.</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</footer>
+</html>
